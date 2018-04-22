@@ -1,0 +1,173 @@
+*{
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body{
+  background: #02010a;
+}
+.padre{
+display: flex;
+flex-flow: column nowrap;
+padding: 0px;
+}
+.header{
+  border-radius: 10px 10px 0 0;
+  background: #5b7989;
+  display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: slidin 2s;
+}
+@-webkit-keyframes slidin {
+0%{
+margin-top: 150%;
+}
+25%{
+margin-top: -5%;
+}
+50%{
+margin-top: 100%;
+}
+75%{
+margin-top: 60%;
+}
+100%{
+margin-top: 0%;
+}
+}
+.titulo{
+  text-align: justify;
+  display: flex;
+  flex: 4 1 auto;
+}
+h1{
+font-size: 3em;
+  font-family: Dancing Script-Bold;
+  color:white;
+  text-shadow: 2px 2px #02010a;
+}
+.nav{
+  display: flex;
+  padding: 0px;
+  text-align: right;
+flex: 1 1 auto;
+
+}
+.nav a{font-size: 1.5em;
+  text-shadow:
+}
+@media screen and  (max-width:900px){
+  .header{flex-direction: column;
+    text-align: justify;
+  }
+}
+.section1{
+
+  background: #82c3a6;
+  display: flex;
+  text-align: center;
+}
+.imagenes1{
+  border:none !important;
+  flex: 1 1 auto;
+}
+.imagenes1 img{box-shadow: 2px 2px 2px #02010a;
+  width: 100%;
+  border-radius:none;
+    padding: 0px;
+}
+.section2{
+  background: #d5c75f;
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px;
+}
+.imagenes2{
+text-align: center;
+  flex: 1 1 auto;
+  text-decoration: underline;
+}
+ .imagenes2 img{box-shadow:2px 2px 2px #02010a;
+  padding: 0px;
+  width: 100%;
+  border: 2px;
+  display: flex;
+}
+.imagenes3{
+  text-align: center;
+  flex: 1 1 auto;
+  text-decoration: underline;
+}
+.imagenes3 img{box-shadow: 2px 2px 2px #02010a;
+  width: 100%;
+  padding: 0px;
+  border: 2px;
+  display: flex;
+}
+.footer{
+font-size: 1.5em;
+  background: #c6d5c5;
+  display: flex;
+  flex-wrap: wrap;
+  height:100%;
+  border-radius: 0 0 10px 10px;
+  justify-content: space-around;
+}
+.Contacto{
+padding: 0px;
+}
+.Terminos{
+  padding: 0px;
+}
+.Redes{
+padding: 0px;
+}
+.Derechos{
+  margin: 0px;
+justify-content: space-between;
+padding: 0px;
+}
+@media all and (max-width: 900px){
+  .header{
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media all and (max-width: 900px){
+  .section2{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+@media all and (max-width: 900px){
+  .footer{
+    flex-direction: column;
+    height: auto;
+  }
+  .Derechos{
+      line-height: 0; font-size: 1.1em;
+  }
+}
+
+.imagenes2:hover {
+	transform: rotate(10deg);
+  transition-duration: 2s;
+}
+.imagenes3:hover{
+  transition: transform 0.5s ease;
+  transform: translate(20px, -5px);
+}
+
+@font-face {
+  font-family: Dancing Script;
+  src: local(fuentes\DancingScript-Bold.ttf);
+}
+*{
+  font-family: Dancing Script;
+}
+h1{
+    font-family: Dancing Script;
+}
